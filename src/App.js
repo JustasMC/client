@@ -14,7 +14,7 @@ class App extends React.Component  {
     return (
       <div className="wrapper">
        <div className="center-wrapper">
-         <h1>Vartotoju tvarkykle</h1>
+         <h1>User game</h1>
         { this.context.state.stage === 1 ?
           <Stage1/>
           :

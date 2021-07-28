@@ -26,7 +26,7 @@ const Stage1 = () =>  {
       setError([true,'Sorry, you need to add something']);
       return false;
     }
-    if(value.length <= 1){
+    if(value.length <= 2){
       setError([true,'Sorry, you need 3 char at least']);
       return false;
     }
@@ -41,7 +41,7 @@ const Stage1 = () =>  {
         <Form.Group>
           <Form.Control
             type="text"
-            placeholder="Parasykite zaidejo varda"
+            placeholder="Add player name"
             name="player"
             ref={textInput}
           />
@@ -54,7 +54,7 @@ const Stage1 = () =>  {
         :null}
 
         <Button className="miami" variant="primary" type="submit">
-          Prideti moketoja
+          Add player
         </Button>
         {
          context.state.players && context.state.players.length > 0 ?
@@ -77,7 +77,7 @@ const Stage1 = () =>  {
                 className="action_button"
                 onClick={()=> context.next() }
               >
-                KITA
+                NEXT
               </div>
             </div>
           </>
